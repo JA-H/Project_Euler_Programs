@@ -1,4 +1,5 @@
 def PrimeSum(n):
+    """Calculates the sum of all the primes less than or equal to n."""
     prime = [True for i in range(n + 1)]
     p = 2
     while( p*p <= n ):
