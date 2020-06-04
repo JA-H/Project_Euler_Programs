@@ -1,4 +1,4 @@
-#Note same code as problem 18 with different binary tree file
+#Note almost the same code as problem 18 with different binary tree file abd less memory used
 
 with open("p67_binary_tree.txt", "r") as f:
     tree = []
@@ -13,11 +13,8 @@ tree.reverse()
 number_of_lines = len(tree)
 
 while number_of_lines > 1:
-    first_line = tree[0]
-    second_line = tree[1]
-    for j in range( len(second_line) ):
-        second_line[j] = max( first_line[j]+second_line[j], first_line[j+1]+second_line[j] )
-    tree[1] = second_line
+    for j in range( len(tree[1]) ):
+        tree[1][j] = max( tree[0][j]+tree[1][j], tree[0][j+1]+tree[1][j] )
     tree.remove(tree[0])
     number_of_lines = len(tree)
 
