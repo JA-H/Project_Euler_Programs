@@ -1,2 +1,2 @@
 # Project_Euler_Programs
-Programs used to solve Project Euler problems.
+A collection of short Python scripts used to solve Project Euler problems.
